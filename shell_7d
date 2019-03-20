@@ -1,0 +1,15 @@
+#!/bin/bash
+set -euxo pipefail
+Date=`date +"%Y%m%d"`
+
+#Function
+#1. make a copy of curent acvie webpage
+#2. create button link to archieved webpage
+
+#replace rss to RSS when meets produciton
+cd /home/liuhui/trace_rss
+cp ../themes/casper/rss.html ../themes/casper/archive/rss-${Date}.html
+cp ../themes/casper/rss-all.html ../themes/casper/archive/rss-all-${Date}.html
+rm  content.db
+echo "<a href=\"archive/rss-${Date}.html\" class=\"btn btn-primary btn-xs\" role=\"button\">Previous Week</a>" >prev.html
+echo "<a href=\"archive/rss-all-${Date}.html\" class=\"btn btn-primary btn-xs\" role=\"button\">Previous Week</a>" >prev-all.html
