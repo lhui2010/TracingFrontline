@@ -1,4 +1,4 @@
-## TracingFrontline
+# TracingFrontline
 Get the latest scientific publication in a single webpage.
 
 ## Usage
