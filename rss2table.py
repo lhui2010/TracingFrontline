@@ -1,9 +1,19 @@
 #!/usr/bin/python3
 import feedparser
-import sys
 import re
 import logging
 import time
+import argparse
+
+
+parser = argparse.ArgumentParser(description='A simple feed parser by formating rss links to table')
+parser.add_argument('rss_links', type=str, nargs = 1,
+                    help='A table containing journal name and rss links')
+parser.add_argument('--version', action='version', version='%(prog)s 0.1')
+args = parser.parse_args()
+
+
+
 
 # create logger
 logger = logging.getLogger('rss2html')
@@ -29,7 +39,7 @@ journal_list = []
 
 
 logger.info('Reading url list Complete...')
-with open(sys.argv[1]) as file:
+with open(args.rss_links[0]) as file:
     for line in file:
         if (len(line.strip())==0 or re.match("#", line)):
             continue
