@@ -26,7 +26,7 @@ The output should be like :
 
 ## Basic usage
 
-Use `-o` to specify the output directory of your html. If you're using Apache, change it to:
+** Use `-o` to specify the output directory ** . If you're using Apache, change it to:
 
 ```
 ./tracefl -o /var/www/html
