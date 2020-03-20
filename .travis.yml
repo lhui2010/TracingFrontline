@@ -3,5 +3,5 @@ language: python
 install:
  - pip install feedparser
 
-script: ./tracefl -o example_output/
+script: ./tracefl -o example_output/ table.test
 

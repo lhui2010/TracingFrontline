@@ -16,7 +16,7 @@ git clone https://github.com/lhui2010/TracingFrontline
 pip install feedparser
 #Test if it works
 cd TracingFrontline
-./tracefl -o example_output/ 
+./tracefl -o example_output/ table.test
 #Open the resulting html in your browser to see if it's OK.
 open  example_output/rss.html
 ```
