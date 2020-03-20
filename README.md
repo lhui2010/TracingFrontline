@@ -1,4 +1,6 @@
-# TracingFrontline
+![](https://travis-ci.org/lhui2010/TracingFrontline.svg?branch=master)
+
+# TracingFrontline 
 Track the latest scientific publication via rss feeds and output in one single webpage.
 
 ## Dependency
