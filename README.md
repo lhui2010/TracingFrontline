@@ -28,7 +28,7 @@ The output should be like :
 
 ### Setting output directory 
 
-Use `-o` to specify the output directory** . If you're using Apache, change it to:
+Use `-o` to specify the output directory. If you're using Apache, change it to:
 
 ```
 ./tracefl -o /var/www/html
