@@ -26,13 +26,13 @@ The output should be like :
 
 ## Basic usage
 
-** Use `-o` to specify the output directory ** . If you're using Apache, change it to:
+**Use `-o` to specify the output directory** . If you're using Apache, change it to:
 
 ```
 ./tracefl -o /var/www/html
 ```
 
-Use `-k` to filter html. 
+**Use `-k` to filter html**. 
 Normally, there should be two html files in output directory. One is `rss-all.html` which is the total 
 rss result (Usually too long). So you can filter it with your keywords specified with `-k`. Use `\|` to
 seperate multiple keywords. Filtered html will be written to `rss.html` file 
@@ -41,7 +41,7 @@ seperate multiple keywords. Filtered html will be written to `rss.html` file
 ./tracefl -o /var/www/html -k "genome\|sequence"
 ```
 
-Use `--rotate` to flush current database. 
+**Use `--rotate` to flush current database**. 
 By default, the rss\_feeds will store in db/content.db and new feeds will keep adding to this database.
 As time goes by, this file may be too long to read. If you want to make an archive of current html pages and
  flush current database (Can't be undone), use `--rotate`
@@ -53,7 +53,7 @@ As time goes by, this file may be too long to read. If you want to make an archi
 where the previous rss.html and rss-all.html will be renamed as `rss-03-20-2020.html`, `rss-all-03-20-2020.html`
 and put in archive folder
 
-You can also specify your custom rss table name
+**Specify your custom rss table** Default is `table` file.
 
 ```
 ./tracefl -o /var/www/html -k "genome" --rotate table.test
