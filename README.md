@@ -14,7 +14,17 @@ pip install feedparser
 cd TracingFrontline
 ./table2html -o example_output/ 
 ```
-example\_output is the output directory, so if you're using Apache, change it to:
+Open the resulting html in your browser to see if it's OK.
+
+```
+open  example_output/rss.html
+```
+
+The output should be like :
+![](src/screenshot.png)
+
+
+In the example, example\_output is the output directory, so if you're using Apache, change it to:
 
 ```
 ./table2html -o /var/www/html
@@ -29,9 +39,9 @@ rss result (Usually too long). So I usually filter them with my interested keywo
 ```
 
 
-By default, the rss\_feeds will store in content.db and new feeds will keep adding to this database.
+By default, the rss\_feeds will store in db/content.db and new feeds will keep adding to this database.
 As time goes by, this file may be too long to read. So you can make an archive of current html pages and
- clear current database (Can't be undo)
+ clear current database (Can't be undone)
 
 ```
 ./table2html -o /var/www/html -k "genome" --rotate
