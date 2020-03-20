@@ -26,13 +26,16 @@ The output should be like :
 
 ## Basic usage
 
-**Use `-o` to specify the output directory** . If you're using Apache, change it to:
+### Setting output directory 
+
+Use `-o` to specify the output directory** . If you're using Apache, change it to:
 
 ```
 ./tracefl -o /var/www/html
 ```
 
-**Use `-k` to filter html**. 
+### Filter html with kewords
+
 Normally, there should be two html files in output directory. One is `rss-all.html` which is the total 
 rss result (Usually too long). So you can filter it with your keywords specified with `-k`. Use `\|` to
 seperate multiple keywords. Filtered html will be written to `rss.html` file 
@@ -41,7 +44,8 @@ seperate multiple keywords. Filtered html will be written to `rss.html` file
 ./tracefl -o /var/www/html -k "genome\|sequence"
 ```
 
-**Use `--rotate` to flush current database**. 
+### Flush current database
+
 By default, the rss\_feeds will store in db/content.db and new feeds will keep adding to this database.
 As time goes by, this file may be too long to read. If you want to make an archive of current html pages and
  flush current database (Can't be undone), use `--rotate`
@@ -52,13 +56,6 @@ As time goes by, this file may be too long to read. If you want to make an archi
 
 where the previous rss.html and rss-all.html will be renamed as `rss-03-20-2020.html`, `rss-all-03-20-2020.html`
 and put in archive folder
-
-**Specify your custom rss table** Default is `table` file.
-
-```
-./tracefl -o /var/www/html -k "genome" --rotate table.test
-```
-
 
 ### Add new rss feeds 
 If you want mak a custom rss table, edit the table file and paste your journal name and RSS feeds seperated with space or tab.
@@ -72,9 +69,17 @@ NatBiotechnol http://www.nature.com/nbt/current_issue/rss/
 MolBiolEvol https://academic.oup.com/rss/site_5325/3191.xml,https://academic.oup.com/rss/site_5325/advanceAccess_3191.xml,https://academic.oup.com/rss/site_5325/OpenAccess.xml
 ```
 
+### Specify your custom rss table
+
+By default is `table` file.
+
+```
+./tracefl -o /var/www/html -k "genome" --rotate table.test
+```
+
 ---
 
-## scripts in src dir
+## Scripts in src dir
 
 ### add\_hr.pl
 
