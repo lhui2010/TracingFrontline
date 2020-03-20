@@ -12,6 +12,7 @@ RSS_TABLE=$_arg_rss_table
 ASSET_DIR="asset"
 ARCHIVE_DIR="archive"
 DB_DIR="db"
+SRC_DIR="src"
 
 if [ ${ROTATE} == "on" ]
 then 
@@ -31,11 +32,11 @@ fi
 
 #############
 #transform rss to table
-python3 rss2table.py ${RSS_TABLE} >>${DB_DIR}/content.db
+python3 ${SRC_DIR}/rss2table.py ${RSS_TABLE} >>${DB_DIR}/content.db
 #Add spacing line between different rss source
 sed 's/<hr>//g' ${DB_DIR}/content.db |sort -k1,1 -k2,2nr |uniq  >${DB_DIR}/content.db.sortuq
-perl add_hr.pl ${DB_DIR}/content.db.sortuq >${DB_DIR}/content.db.all
-grep ${KEYWORD} ${DB_DIR}/content.db.sortuq | perl add_hr.pl >${DB_DIR}/content.db.genome
+perl ${SRC_DIR}/add_hr.pl ${DB_DIR}/content.db.sortuq >${DB_DIR}/content.db.all
+grep ${KEYWORD} ${DB_DIR}/content.db.sortuq | perl ${SRC_DIR}/add_hr.pl >${DB_DIR}/content.db.genome
 
 cat ${ASSET_DIR}/head.html >${DB_DIR}/index.html
 touch ${DB_DIR}/prev.html ${DB_DIR}/prev-all.html

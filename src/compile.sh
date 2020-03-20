@@ -1,2 +1,2 @@
-cat argparse.sh table2html.sh >table2html
-chmod 755 table2html
+cat argparse.sh table2html.sh >../tracefl
+chmod 755 ../tracefl
