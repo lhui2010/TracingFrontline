@@ -7,7 +7,7 @@ Track the latest scientific publication via rss feeds and output in one single w
 
 ## Quick start
 
-The scripts hosted here help you track the latest publications from a webpage. 
+TracingFrontline help you track the latest scientific publications from a webpage. 
 To use it.
 
 ```bash
@@ -66,13 +66,13 @@ MolBiolEvol https://academic.oup.com/rss/site_5325/3191.xml,https://academic.oup
 
 ---
 
-## Asset
+## scripts in src dir
 
 ### add\_hr.pl
 
 Used to add a `<hr>` tag between adjacent differnt journals to seperate them.
 
-###rss2table.py
+### rss2table.py
 
 rss2table.py is used to fromat rss links to tab seperated text files, input is `table` file
 
