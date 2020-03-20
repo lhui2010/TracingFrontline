@@ -1,27 +1,37 @@
 Science http://science.sciencemag.org/rss/current.xml
 
 Nature http://feeds.nature.com/nature/rss/current
+Cell http://www.cell.com/cell/inpress.rss
+
 NatBiotechnol http://www.nature.com/nbt/current_issue/rss/
 NatPlants http://feeds.nature.com/nplants/rss/current
-NatMethods http://www.nature.com/nmeth/current_issue/rss/
-NatCommun  http://feeds.nature.com/ncomms/rss/current
 NatGenet http://www.nature.com/ng/current_issue/rss/
+NatCommun  http://feeds.nature.com/ncomms/rss/current
+NatEcolEvol http://feeds.nature.com/natecolevol/rss/current
+ScienceAdvances http://advances.sciencemag.org/rss/current.xml
 
-Cell http://www.cell.com/cell/current.rss
+
+NatRevGenet http://www.nature.com/nrg/current_issue/rss/
 
 Proc.Natl.Acad.Sci.U.S.A. https://feeds.feedburner.com/pnas/SMZM
 
+MolPlant  http://www.cell.com/molecular-plant/inpress.rss
+CurrBiol http://www.cell.com/current-biology/inpress.rss
 MolBiolEvol https://academic.oup.com/rss/site_5325/3191.xml
 GenomeRes https://genome.cshlp.org/rss/current.xml
-PLoSComputBiol http://feeds.plos.org/ploscompbiol/NewArticles
 GenomeBiol http://genomebiology.com/latest/rss
-BMCBioinformatics http://www.biomedcentral.com/bmcbioinformatics/latest/rss
-Bioinformatics http://bioinformatics.oxfordjournals.org/rss/ahead.xml
+Genetics https://www.genetics.org/rss/current.xml
 
-MolPlant  http://www.cell.com/molecular-plant/current.rss
+AdvancedSci https://onlinelibrary.wiley.com/feed/21983844/most-recent
+
+PlantCell http://www.plantcell.org/rss/current.xml
 NewPhytol https://onlinelibrary.wiley.com/action/showFeed?jc=14698137&type=etoc&feed=rss
 PlantPhysiol http://www.plantphysiol.org/rss/current.xml
-PlantCell http://www.plantcell.org/rss/current.xml
+
+NatMethods http://www.nature.com/nmeth/current_issue/rss/
+Bioinformatics http://bioinformatics.oxfordjournals.org/rss/ahead.xml
+PLoSComputBiol http://feeds.plos.org/ploscompbiol/NewArticles
+BMCBioinformatics http://www.biomedcentral.com/bmcbioinformatics/latest/rss
 
 #BioRxivBio http://connect.biorxiv.org/biorxiv_xml.php?subject=bioinformatics
 #BioRxivGenomInfor http://connect.biorxiv.org/biorxiv_xml.php?subject=genomics
